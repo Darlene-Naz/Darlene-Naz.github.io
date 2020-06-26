@@ -1180,6 +1180,15 @@ th {
     }
 }
 
+.section-title.grey h3 {
+    color: darkgray;
+    font-size: 32px;
+    font-weight: 700;
+    text-transform: capitalize;
+    position: relative;
+    line-height: 44px;
+}
+
 .section-title h2 {
     font-size: 48px;
     font-weight: 700;
@@ -5524,4 +5533,400 @@ a.scroll-link {
 .designation .owl-controls .owl-dots .owl-dot:hover,
 .designation .owl-controls .owl-dots .owl-dot.active {
     background: #e45447;
+}
+
+#navi {
+    top: 180px;
+    position: -webkit-sticky;
+    position: sticky;
+    margin: 0;
+}
+
+#navi ul {
+    margin: 0;
+    padding: 0;
+}
+
+#navi li {
+    font-weight: 700;
+    font-size: 16px;
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+#navi li a {
+    color: #000000;
+}
+
+#navi li a.current {
+    color: #e45447;
+    margin-left: 20px;
+    position: relative;
+}
+
+#navi li a.current:after {
+    position: absolute;
+    top: 50%;
+    left: -24px;
+    width: 20px;
+    height: 2px;
+    content: '';
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    background: #e45447;
+}
+
+progress {
+    vertical-align: baseline;
+}
+
+@-webkit-keyframes progress-bar-stripes {
+    from {
+        background-position: 1rem 0;
+    }
+    to {
+        background-position: 0 0;
+    }
+}
+
+@keyframes progress-bar-stripes {
+    from {
+        background-position: 1rem 0;
+    }
+    to {
+        background-position: 0 0;
+    }
+}
+
+.progress {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 1rem;
+    overflow: hidden;
+    font-size: 0.75rem;
+    background-color: #e9ecef;
+    border-radius: 0.25rem;
+}
+
+.progress-bar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    background-color: #007bff;
+    -webkit-transition: width 0.6s ease;
+    -o-transition: width 0.6s ease;
+    transition: width 0.6s ease;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .progress-bar {
+        -webkit-transition: none;
+        -o-transition: none;
+        transition: none;
+    }
+}
+
+.progress-bar-striped {
+    background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+    background-image: -o-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+    background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+    background-size: 1rem 1rem;
+}
+
+.progress-bar-animated {
+    -webkit-animation: progress-bar-stripes 1s linear infinite;
+    animation: progress-bar-stripes 1s linear infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .progress-bar-animated {
+        -webkit-animation: none;
+        animation: none;
+    }
+}
+
+.progress-wrap {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.progress-wrap h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+.progress {
+    height: 10px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    background: #e6e6e6;
+    overflow: visible;
+}
+
+.progress-bar {
+    background: #3e64ff;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    font-size: 12px;
+    line-height: 1.2;
+    color: #000000;
+    font-weight: 600;
+    position: relative;
+    overflow: visible;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    border-radius: 2px;
+}
+
+.progress-bar:after {
+    position: absolute;
+    top: -2px;
+    right: 0;
+    width: 34px;
+    height: 34px;
+    content: '';
+    background: #3e64ff;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    border-radius: 2px;
+    opacity: 0;
+}
+
+.progress-bar span {
+    position: absolute;
+    top: -38px;
+    right: 0;
+    font-size: 16px;
+    font-weight: 500;
+    color: #000000;
+}
+
+.progress-circle .progress {
+    width: 150px;
+    height: 150px;
+    background: none;
+    position: relative;
+}
+
+.progress-circle .progress::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 6px solid #eee;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.progress-circle .progress>span {
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+}
+
+.progress-circle .progress .progress-left {
+    left: 0;
+}
+
+.progress-circle .progress .progress-bar {
+    width: 100%;
+    height: 100%;
+    background: none;
+    border-width: 6px;
+    border-style: solid;
+    position: absolute;
+    top: 0;
+}
+
+.progress-circle .progress .progress-left .progress-bar {
+    left: 100%;
+    border-top-right-radius: 80px;
+    border-bottom-right-radius: 80px;
+    border-left: 0;
+    -webkit-transform-origin: center left;
+    -ms-transform-origin: center left;
+    transform-origin: center left;
+}
+
+.progress-circle .progress .progress-right {
+    right: 0;
+}
+
+.progress-circle .progress .progress-right .progress-bar {
+    left: -100%;
+    border-top-left-radius: 80px;
+    border-bottom-left-radius: 80px;
+    border-right: 0;
+    -webkit-transform-origin: center right;
+    -ms-transform-origin: center right;
+    transform-origin: center right;
+}
+
+.progress-circle .progress .progress-value {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+/* --------- Skills --------------------------------------*/
+
+.skill-container {
+    margin-bottom: 50px;
+}
+
+.piechart-holder,
+.custom-skillbar-holder {
+    float: left;
+    width: 100%;
+    position: relative;
+}
+
+.piechart-holder h4 {
+    font-size: 12px;
+    padding: 12px 35px;
+    border: 1px solid #eee;
+    display: inline-block;
+    background: #fff;
+    min-width: 150px;
+    font-weight: 600;
+    color: #666;
+}
+
+.chart {
+    position: relative;
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    margin-bottom: 18px;
+    text-align: center;
+    background: #fff;
+}
+
+.chart canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.piechart {
+    position: relative;
+    padding-bottom: 14px;
+    text-align: center;
+    float: left;
+    width: 33.3%;
+}
+
+.percent {
+    display: inline-block;
+    font-size: 12px;
+    line-height: 152px;
+    z-index: 2;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    color: #666;
+}
+
+.percent:after {
+    content: '%';
+    margin-left: 0.1em;
+    font-size: 12px;
+}
+
+.angular {
+    margin-top: 100px;
+}
+
+.angular .chart {
+    margin-top: 0;
+}
+
+.skill-bar-percent {
+    float: right;
+    font-size: 12px;
+    margin-top: 13px;
+    padding-bottom: 6px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    color: #666;
+    margin-right: 5%;
+}
+
+.skillbar-box {
+    float: left;
+    width: 100%;
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.skillbar-bg {
+    position: relative;
+    display: block;
+    float: left;
+    width: 95%;
+    height: 10px;
+    overflow: hidden;
+    background: #292929;
+    border-radius: 2px;
+}
+
+.fw-skills .skillbar-bg {
+    width: 100%;
+}
+
+.fw-skills .skill-bar-percent {
+    margin-right: 0;
+}
+
+.custom-skillbar-title span {
+    float: left;
+    font-size: 13px;
+    margin-top: 12px;
+    padding-bottom: 6px;
+    font-weight: 600;
+    min-width: 100px;
+    text-align: left;
+}
+
+.custom-skillbar {
+    height: 10px;
+    width: 0px;
+}
+
+.bg-parallax-module {
+    position: absolute;
+    width: 150px;
+    height: 70px;
+    background: #ccc;
+    opacity: 0.15;
+    z-index: 1;
+    -webkit-transition: all .8s ease-in-out;
+    transition: all .8s ease-in-out;
+}
+
+.piechart-holder h4,
+.hidden-info-wrap {
+    float: left;
+    width: 100%;
+    text-align: center;
 }
