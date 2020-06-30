@@ -2728,7 +2728,7 @@ h6 {
 
 #header.header-scrolled {
     position: fixed;
-    box-shadow: -21.213px 21.213px 30px 0px rgba(158, 158, 158, 0.3);
+    box-shadow: -21.213px 21.213px 30px 0px rgba(158, 158, 158, 0.2);
     background: #fff;
     transition: all 0.5s;
 }
@@ -2738,7 +2738,7 @@ h6 {
 }
 
 #header.header-scrolled.dark {
-    background: #222222;
+    background: #2c2d32;
 }
 
 #logo {
@@ -3024,7 +3024,7 @@ h6 {
 }
 
 #mobile-nav ul .menu-has-children li a {
-    text-transform: none;
+    text-transform: uppercase;
 }
 
 #mobile-nav ul .menu-item-active {
@@ -3219,6 +3219,10 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 /*-------- Start About Area ------------*/
 
+.about-area {
+    margin-left: 50px;
+}
+
 .about-area .section-title {
     margin-bottom: 0;
 }
@@ -3267,6 +3271,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 .work-area {
     background: #f9f9ff;
+    margin-left: 50px;
 }
 
 @media (max-width: 1024px) {
@@ -3405,6 +3410,10 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 /*--------- End Work Area -------------*/
 
+.job-area {
+    margin-left: 50px;
+}
+
 .job-area.offwhite {
     background: #f9f9ff;
 }
@@ -3486,6 +3495,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 .service-area {
     background: #f9f9ff;
+    margin-left: 50px;
 }
 
 .service-area.white {
@@ -3575,6 +3585,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 .testimonials_area {
     position: relative;
+    margin-left: 50px;
 }
 
 .testimonials_area .owl-controls {
@@ -3678,6 +3689,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 .contact-area {
     background: #e45447;
+    margin-left: 50px;
 }
 
 @media (max-width: 1024px) {
@@ -5051,7 +5063,16 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 a.scroll-link {
+    font-weight: 600;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-family: "Roboto", sans-serif;
+    letter-spacing: 1px;
     margin: 13, 28, 13, 25;
+}
+
+#header.header-scrolled.dark a.scroll-link {
+    color: #8b8b8b;
 }
 
 
@@ -5131,7 +5152,7 @@ a.scroll-link {
     position: absolute;
     left: 0;
     bottom: 0;
-    width: 50px;
+    width: inherit;
     height: 50px;
     z-index: 100;
     color: #fff;
@@ -5153,6 +5174,7 @@ a.scroll-link {
 .show-share span,
 .contact-btn span {
     position: absolute;
+    width: max-content;
     height: 50px;
     line-height: 50px;
     left: 0;
@@ -5182,6 +5204,7 @@ a.scroll-link {
     margin-top: 0;
     opacity: 1;
     visibility: visible;
+    width: max-content;
 }
 
 .share-wrapper {
@@ -5999,6 +6022,23 @@ progress {
     -webkit-transform: translate3d(0, 0, 0);
 }
 
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+
+.nav-holder::-webkit-scrollbar {
+    display: none;
+}
+
+
+/* Hide scrollbar for IE, Edge and Firefox */
+
+.nav-holder {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
 .nav-holder:after {
     content: '';
     position: absolute;
@@ -6075,10 +6115,165 @@ progress {
     display: none;
 }
 
+.header-contacts li i,
+.nav-holder nav li a.act-link,
+#twitts-container .timePosted a:before,
+.follow-twiit-button,
+#twitts-container ul li:before,
+.sliding-menu a i.act-link,
+.sliding-menu a:hover,
+.sliding-menu a:hover i,
+.submen-dec:before,
+.footer-contacts li i,
+.footer-contacts li:hover a,
+.nav-title:before,
+.sliding-menu a.back:hover:before,
+.scroll-nav a:hover,
+.scroll-nav a.act-scrlink,
+.section-title h2 span,
+.section-subtitle span,
+.inline-facts-wrap i,
+.sp-arr,
+.text-carousel .slick-center .text-carousel-item:before,
+.text-carousel .slick-center .text-carousel-item:after,
+.listing-rating i,
+.text-carousel-item a.testim-link:hover,
+.half-hero-wrap h1 span,
+.hero-decor-let,
+.fet_pr-carousel-cat a:hover,
+.fet_pr-carousel-box-media-zoom,
+.pin:before,
+.fsp-filter .filter-title i,
+.fsp-filter .gallery-filters a:hover,
+.fsp-filter .gallery-filters a.gallery-filter-active,
+.all-album,
+.hd-box-wrap p a:hover,
+.inline-filter .filter-button i,
+.load-more i,
+.parallax-header span,
+.parallax-header a:hover,
+.content-nav li a.ln,
+.content-nav li a.rn,
+.single-page-fixed-row-link i,
+.sarr-contr,
+.details-wrap h3 span,
+.pr-list li a:hover,
+.cur-page:hover span,
+.show-info:hover span,
+.tooltip-info h5,
+.inline-transparent-filter a:hover,
+.inline-transparent-filter .folio-counter div.all-album,
+.inline-transparent-filter a.gallery-filter-active,
+.show-case-slider-wrap-style2 .sarr-contr:hover,
+.hero-start-link i,
+.hero-start-link span:before,
+.single-slider-wrap .sp-cont,
+.fullscreen-slider-title h3 span,
+.hero-start-button i,
+.audiojs .time strong,
+.audiojs .play:before,
+.audiojs .pause:before,
+.playlist-wrap ol li:before,
+.playlist-wrap ol li.playing a.downbuy-link,
+.playlist-wrap ol li a.downbuy-link:hover,
+.playlist-wrap ol li a.audio-link:hover,
+.playlist-wrap ol li.playing a.audio-link,
+.album-download-links li a,
+.custom-form label i,
+.custom-form .verify-wrap .selectbox,
+.selectbox li:hover,
+.contact-list li i,
+.recomm-price i,
+.main-about h2 a,
+.event-header-item i,
+.buy-ticket-link,
+.album-cover-datils li i,
+.process-wrap li .process-details a:hover,
+.blog-btn i,
+.widget-wrap .tagcloud li a,
+.serv-zoom,
+.hidden-works-item-text ul li a:hover,
+.hidden-works-item-media-img a,
+.hidden-works-item.act-index .hidden-works-item-dec,
+.hidden-info-pagination i,
+.team-box .team-photo a:hover,
+.team-single-social li a:hover,
+.main-about h2 span,
+.fullscreen-slider-wrap .sp-cont,
+.fs-carousel-titlecat a,
+.fs-carousel-link:hover,
+.lg-actions .lg-next:hover,
+.lg-actions .lg-prev:hover {
+    color: #FAC921
+}
+
+#twitts-container ul li:hover .timePosted a:after {
+    border-top-color: #FAC921;
+}
+
+.color-bg,
+.color-btn,
+.btn:before,
+.btn:before,
+.ps-container>.ps-scrollbar-y-rail>.ps-scrollbar-y,
+.follow-twiit-button span,
+.share-container .share-icon span,
+.subcribe-form .subscribe-button,
+.close-twitter:hover,
+.nav-button span,
+.scroller,
+.show-share,
+.section-title:before,
+.promo-link,
+.close-share:hover,
+.scroll-nav a.act-scrlink:after,
+.line-item:before,
+.custom-inner-header:before,
+.custom-inner-header i,
+.custom-skillbar,
+.pr-title:before,
+.slick-dots li.slick-active button:before,
+.order-wrap h3:before,
+.inline-facts-wrap h6:before,
+.features-box h3:before,
+.hero-decor-numb:before,
+.fet_pr-carousel-box-text h3:before,
+.fet_pr-carousel-counter:before,
+.fsp-filter .gallery-filters a:after,
+.hd-box-wrap h2:before,
+.inline-filter .gallery-filters a:before,
+.inline-filter .folio-counter:before,
+.parallax-text h3:before,
+.show-case-title h3:before,
+.accordion a.toggle span,
+.details-wrap h3:before,
+.small-color-separator,
+.audiojs .progress,
+.volume-control span,
+.volume-control span.allvolumne,
+.contact-form-footer p:before,
+.collage-image:before,
+.best-price .price-head,
+.price-link,
+.album-cover-title h3:before,
+.video-promo-text h3:before,
+.fw-post h2:before,
+.about-widget h5:after,
+.serv-works-item .hidden-works-item-text h3:before,
+.main-about h2:before {
+    background: #FAC921
+}
+
 .nav-overlay:hover .tooltip {
     display: block;
     position: fixed;
     overflow: hidden;
+}
+
+.nav-overlay,
+.share-wrapper,
+.nav-holder {
+    top: 80px;
 }
 
 nav.nav-inner {
