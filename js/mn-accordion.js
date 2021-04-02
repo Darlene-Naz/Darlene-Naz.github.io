@@ -1,6 +1,6 @@
 (function (global, factory) {
     if (typeof define === "function" && define.amd) {
-        define(["exports"], factory);
+        define([ "exports" ], factory);
     } else if (typeof exports !== "undefined") {
         factory(exports);
     } else {
@@ -11,10 +11,6 @@
         global.index = mod.exports;
     }
 })(this, function (exports) {
-    /**
-     * Created by maykinayki on 8/31/17.
-     */
-
     "use strict";
 
     Object.defineProperty(exports, "__esModule", {
@@ -23,11 +19,11 @@
 
     var _extends = Object.assign || function (target) {
         for (var i = 1; i < arguments.length; i++) {
-            var source = arguments[i];
+            var source = arguments[ i ];
 
             for (var key in source) {
                 if (Object.prototype.hasOwnProperty.call(source, key)) {
-                    target[key] = source[key];
+                    target[ key ] = source[ key ];
                 }
             }
         }
@@ -44,7 +40,7 @@
     var _createClass = function () {
         function defineProperties(target, props) {
             for (var i = 0; i < props.length; i++) {
-                var descriptor = props[i];
+                var descriptor = props[ i ];
                 descriptor.enumerable = descriptor.enumerable || false;
                 descriptor.configurable = true;
                 if ("value" in descriptor) descriptor.writable = true;
@@ -64,7 +60,7 @@
 
     var Accordion = function () {
         function Accordion(element) {
-            var options = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
+            var options = arguments.length > 1 && arguments[ 1 ] !== undefined ? arguments[ 1 ] : {};
 
             _classCallCheck(this, Accordion);
 
@@ -113,16 +109,16 @@
             }
         }
 
-        _createClass(Accordion, [{
+        _createClass(Accordion, [ {
             key: "init",
             value: function init() {
                 var self = this;
 
-                var openedIndexes = self.options.defaultOpenedIndexes instanceof Array ? self.options.defaultOpenedIndexes : [self.options.defaultOpenedIndexes];
+                var openedIndexes = self.options.defaultOpenedIndexes instanceof Array ? self.options.defaultOpenedIndexes : [ self.options.defaultOpenedIndexes ];
 
                 var _loop = function _loop(i) {
-                    var accordionItem = self.accordion.children[i];
-                    var accordionItemHeading = accordionItem.getElementsByClassName("accordion-heading")[0];
+                    var accordionItem = self.accordion.children[ i ];
+                    var accordionItemHeading = accordionItem.getElementsByClassName("accordion-heading")[ 0 ];
 
                     if (accordionItemHeading) {
                         var eventFn = function eventFn(e) {
@@ -153,7 +149,7 @@
                 item.isOpened = true;
                 item.classList.add("state-open");
 
-                var accordionItemContent = item.getElementsByClassName("accordion-content")[0];
+                var accordionItemContent = item.getElementsByClassName("accordion-content")[ 0 ];
 
                 if (!self.options.multiple) {
                     self.closeRestAccordionItems(itemIndex);
@@ -166,7 +162,7 @@
             value: function openAccordionItemByIndex(itemIndex) {
                 var self = this;
 
-                var accordionItem = self.accordion.children[itemIndex];
+                var accordionItem = self.accordion.children[ itemIndex ];
                 self.openAccordionItem(accordionItem, itemIndex);
             }
         }, {
@@ -174,7 +170,7 @@
             value: function closeAccordionItem(item) {
                 var self = this;
 
-                var accordionItemContent = item.getElementsByClassName("accordion-content")[0];
+                var accordionItemContent = item.getElementsByClassName("accordion-content")[ 0 ];
                 item.isOpened = false;
                 item.classList.remove("state-open");
 
@@ -185,7 +181,7 @@
             value: function closeAccordionItemByIndex(itemIndex) {
                 var self = this;
 
-                var accordionItem = self.accordion.children[itemIndex];
+                var accordionItem = self.accordion.children[ itemIndex ];
                 self.closeAccordionItem(accordionItem);
             }
         }, {
@@ -194,12 +190,12 @@
                 var self = this;
 
                 for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
-                    args[_key] = arguments[_key];
+                    args[ _key ] = arguments[ _key ];
                 }
 
                 for (var i = 0; i < self.accordionItemsLength; i++) {
                     if (args.indexOf(i) === -1) {
-                        var _accordionItem = self.accordion.children[i];
+                        var _accordionItem = self.accordion.children[ i ];
                         self.closeAccordionItem(_accordionItem);
                     }
                 }
@@ -222,7 +218,7 @@
                     }
                 }, self.options.eventDelay);
             }
-        }]);
+        } ]);
 
         return Accordion;
     }();
