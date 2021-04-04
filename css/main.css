@@ -1126,7 +1126,7 @@ th {
 }
 
 #back-top a {
-    background: #90acd1;
+    background: #FFB300;
     display: block;
     text-align: center;
     width: 35px;
@@ -1524,7 +1524,7 @@ th {
 }
 
 .primary-btn.white {
-    border: 1px solid #90acd1;
+    border: 1px solid #FFB300;
     color: #e45447;
     background: #fff;
 }
@@ -1538,7 +1538,7 @@ th {
 }
 
 .primary-btn.white:hover {
-    background: #90acd1;
+    background: #FFB300;
     color: #fff;
 }
 
@@ -3059,7 +3059,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 .home-banner-area {
     background: url(../img/banner-bg.jpg) center;
-    background-size: cover;
+    background-size: contain;
 }
 
 @media (max-width: 769px) {
@@ -3070,7 +3070,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .banner-area {
-    background: #90acd1;
+    background: #FFB300;
 }
 
 .banner-content {
@@ -3104,7 +3104,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .banner-content .me {
-    background: #90acd1;
+    background: #FFB300;
     padding: 18px;
     display: inline-block;
     color: #fff;
@@ -3122,7 +3122,7 @@ body.mobile-nav-active #mobile-nav-toggle {
     height: 0;
     border-left: 26px solid transparent;
     border-right: 0px solid transparent;
-    border-top: 24px solid #90acd1;
+    border-top: 24px solid #FFB300;
 }
 
 .banner-content .designation {
@@ -3130,6 +3130,7 @@ body.mobile-nav-active #mobile-nav-toggle {
     font-size: 20px;
     font-weight: 400;
     line-height: 42px;
+    color: #000;
 }
 
 @media (max-width: 576px) {
@@ -3140,10 +3141,12 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 .banner-content .designation .designer {
     color: #e45447;
+    font-weight: bold;
 }
 
 .banner-content .designation .developer {
-    color: #90acd1;
+    color: orange;
+    font-weight: bold;
 }
 
 .banner-img {
@@ -3419,7 +3422,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .single-job {
-    background-color: #f9f9ff;
+    background-color: #FFF8E1;
     padding: 40px 30px;
     border-radius: 10px;
     margin-bottom: 10px;
@@ -3466,7 +3469,7 @@ body.mobile-nav-active #mobile-nav-toggle {
     padding: 0 28px;
     background: #fff;
     color: #222222;
-    border: 1px solid #90acd1;
+    border: 1px solid #FFB300;
 }
 
 @media (max-width: 1199px) {
@@ -3484,7 +3487,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .single-job:hover {
-    background: #90acd1;
+    background: #FFB300;
     cursor: pointer;
     color: #fff;
 }
@@ -3515,7 +3518,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .service-area .col-lg-3.col-md-6:nth-child(4) .single-service {
-    background: #90acd1;
+    background: #FFB300;
 }
 
 .single-service {
@@ -5462,6 +5465,10 @@ a.scroll-link {
     position: relative;
 }
 
+.list-block p {
+    margin-bottom: 4px;
+}
+
 .list-block-wrap.style-2 .list-block:before {
     background-color: #E45447;
 }
@@ -5498,7 +5505,7 @@ a.scroll-link {
     font-size: 12px;
     font-weight: 500;
     display: inline-block;
-    margin-bottom: 13px;
+    margin-bottom: px;
     margin-top: -1px;
 }
 
@@ -5926,7 +5933,7 @@ progress {
     width: 95%;
     height: 10px;
     overflow: hidden;
-    background: #292929;
+    background: #EEEEEE;
     border-radius: 2px;
 }
 
