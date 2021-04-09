@@ -3058,8 +3058,8 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .home-banner-area {
-    background: url(../img/banner-bg.jpg) center;
-    background-size: contain;
+    background: url(../img/banner-bg.jpg) bottom;
+    background-size: cover;
 }
 
 @media (max-width: 769px) {
@@ -3141,12 +3141,10 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 .banner-content .designation .designer {
     color: #e45447;
-    font-weight: bold;
 }
 
 .banner-content .designation .developer {
     color: orange;
-    font-weight: bold;
 }
 
 .banner-img {
@@ -3408,6 +3406,12 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 .single-work:hover .middle {
     opacity: 1;
+}
+
+.ff-container.ff-responsive .ff-image,
+.ff-container.ff-responsive .ff-canvas {
+    width: 100%;
+    border-radius: 10px;
 }
 
 
@@ -4204,8 +4208,8 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .top-category-widget-area .single-cat-widget .overlay-bg {
-    background: rgba(0, 0, 0, 0.85);
-    margin: 7%;
+    background: rgba(90, 90, 90, 0.85);
+    margin: 12%;
     -webkit-transition: all 0.3s ease 0s;
     -moz-transition: all 0.3s ease 0s;
     -o-transition: all 0.3s ease 0s;
@@ -6655,50 +6659,4 @@ Icon list block
     left: -2px;
     bottom: -10px;
     width: 4px;
-}
-
-.flip_container {
-    width: 100%;
-    height: 450px;
-    cursor: pointer;
-}
-
-.flip_container:hover .flip {
-    -webkit-transform: rotateY(180deg);
-    transform: rotateY(180deg);
-}
-
-.flip {
-    -webkit-transition: 0.75s;
-    transition: 0.75s;
-    -webkit-transform-style: preserve-3d;
-    transform-style: preserve-3d;
-    position: relative;
-    height: 100%;
-}
-
-.flip_front,
-.flip_back {
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-
-.flip_front {
-    -webkit-transform: rotateY(0deg);
-    transform: rotateY(0deg);
-}
-
-.flip_back {
-    -webkit-transform: rotateY(180deg);
-    transform: rotateY(180deg);
-    padding: 10px;
-    background: #fff;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
 }

@@ -1,5 +1,5 @@
 /** @format */
-
+new Freezeframe();
 $(document).ready(function() {
     "use strict";
 
@@ -806,5 +806,4 @@ function onScroll(event) {
             currLink.removeClass("active");
         }
     });
-
 }
