@@ -1,5 +1,9 @@
 /** @format */
-new Freezeframe();
+new Freezeframe({
+    trigger: 'hover',
+    overlay: true
+});
+
 $(document).ready(function() {
     "use strict";
 
@@ -66,29 +70,6 @@ $(document).ready(function() {
         removalDelay: 160,
         preloader: false,
         fixedContentPos: false,
-    });
-
-    //------- Filter  js --------//
-    $(window).on("load", function() {
-        $(".filters ul li").on("click", function() {
-            $(".filters ul li").removeClass("active");
-            $(this).addClass("active");
-
-            var data = $(this).attr("data-filter");
-            $grid.isotope({
-                filter: data,
-            });
-        });
-
-        if (document.getElementById("work")) {
-            var $grid = $(".grid").isotope({
-                itemSelector: ".all",
-                percentPosition: true,
-                masonry: {
-                    columnWidth: ".all",
-                },
-            });
-        }
     });
 
     //------- Accordion  js --------//
