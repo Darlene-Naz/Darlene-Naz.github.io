@@ -41,6 +41,17 @@ $(document).ready(function() {
         );
         return false;
     });
+    // ------- Filter  js --------//
+    $(window).on("load", function() {
+        $(".filters ul li").on("click", function() {
+            $(".filters ul li").removeClass("active");
+            $(this).addClass("active");
+            $('#easy-filter-wrap').easyFilter({
+                animation: 'fade',
+                duration: 0
+            });
+        });
+    });
 
     //------- Niceselect  js --------//
 
