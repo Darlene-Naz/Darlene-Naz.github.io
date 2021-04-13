@@ -3139,11 +3139,11 @@ body.mobile-nav-active #mobile-nav-toggle {
     }
 }
 
-.banner-content .designation .designer {
+.designer {
     color: #e45447;
 }
 
-.banner-content .designation .developer {
+.developer {
     color: orange;
 }
 
