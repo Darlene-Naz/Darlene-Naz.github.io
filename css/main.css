@@ -3140,10 +3140,12 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .designer {
+    font-weight: 500;
     color: #e45447;
 }
 
 .developer {
+    font-weight: 500;
     color: orange;
 }
 
